@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href=style.css">
+		<style>
+			body{
+				font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<h1>DonorHub</h1>
+			<button id="about" class="headerButton" onclick="window.location.href='about.html'">About</button>
+		<button id="Donate" class="headerButton" onclick="window.location.href='donate.html'">Donate</button>
+		<button id="Recieve" class="headerButton" onclick="window.location.href='recieve.html'">Recieve</button>
+		</div><br>
+		<form name="donate">
+			<label for="dname">Donor Name</label><br>
+			<input type="text" id="dname" name="dname"><br><br>
+			<label for="pdob">Donor DOB</label><br>
+			<input type="date" id="pdob" name="pdob"><br><br>
+			<label for="Btype">Donor Blood Type</label><br>
+			<select name="Btype">
+				<option value="Select">Select Blood Type</option>
+				<option value="A+">A+</option>
+				<option value="A-">A-</option>
+				<option value="B+">B+</option>
+				<option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+			</select><br><br>
+			<label for="preexist">Preexisting Conditions</label><br>
+			<textarea name="preexist" rows="5" cols="40"></textarea><br><br>
+			<input type="reset" value="Reset" id="reset"><br>
+			<input type="button" value="Submit" id="submit" onclick="alert('Form Submitted')">
+			
+		</form>
+		<br>
+		<button class="back" onclick="window.location.href='welcome.html'">Back</button>
+	</body>
+	<script>
+		
+	
+	</script>
+</html>

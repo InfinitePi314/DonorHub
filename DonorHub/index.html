@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		#about{
+			float: right;
+		}
+	</style>
+</head>
+
+<html>
+	<body>
+		<div class="header">
+			<h1>DonorHub</h1>
+			<button id="about" class= "headerButton" onclick = "window.location.href = 'about.html'">About</button>
+		</div>
+
+		<div id="main">
+			<h2>Hospital Login</h2>
+			<form name="login">
+				<label for="hname">Hospital Name</label><br>
+				<input type="text" id="hname" name="hname"><br><br>
+				<label for="hpass">Password</label><br>
+				<input type="password" id="hpass" name="hpass"><br><br>
+				<input type="button" value="Submit" id="submit" onclick="checkLogin()">
+			</form>
+		</div>
+
+		
+	</body>
+	<script>
+			//User: Madurai Medical Institute
+			//Pass: MMI0987MMI
+			function checkLogin() {
+				var name = document.forms["login"]["hname"].value;
+				var pass = document.forms["login"]["hpass"].value;
+				if (name == "Madurai Medical Institute" && pass== "MMI0987MMI"){
+					window.location.href="welcome.html";
+				}else{
+					alert("Incorrect Password. Try again.")
+					return false
+				}
+			}
+	</script>
+</html>
